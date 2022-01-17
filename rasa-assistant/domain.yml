@@ -1,0 +1,279 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- chao_hoi
+- tam_biet
+- cam_on
+- ask_chuc_nang
+- ask_thoi_gian
+- ask_ngay
+- ask_quy_dinh
+- ask_quy_dinh_noi_quy_lao_dong
+- ask_quy_dinh_trat_tu_cong_ty
+- ask_quy_dinh_an_toan_ve_sinh_lao_dong
+- ask_quy_dinh_giao_tiep_ung_xu
+- ask_quy_dinh_trang_phuc_lam_viec
+- ask_quy_dinh_su_dung_tai_san
+- ask_quy_dinh_thoi_gian_lam_viec
+- ask_quy_dinh_nghi_phep
+- ask_quy_dinh_thu_tuc_ra_vao
+- ask_quy_dinh_tiep_khach
+- ask_quy_dinh_an_toan_lao_dong
+- ask_quy_dinh_ve_sinh
+- che_bai
+- ask_dia_chi
+- ask_thoi_gian_an
+- ask_vi_tri_canteen
+- ask_vi_tri_do_xe
+- ask_gio_gui_xe
+- ask_danh_sach_phong_ban
+- ask_truong_phong
+- ask_danh_sach_nhan_vien_thuoc_phong_ban
+- ask_vi_tri_phong_ban
+- ask_event
+- ask_thong_tin_event
+- ask_dia_diem_event
+- ask_nhan_vien_event
+- ask_thoi_gian_event
+- ask_danh_sach_du_an
+- ask_thoi_gian_thuc_hien_du_an
+- ask_dia_diem_thuc_hien_du_an
+- ask_nhan_vien_du_an
+entities:
+- dia_diem
+- ten_san_pham
+- ten_phong_ban
+- ten_event
+- ten_du_an
+slots:
+  date:
+    type: text
+  dia_diem_event:
+    type: text
+  dia_diem_phong_ban:
+    type: text
+  giasp:
+    type: text
+  giathanh:
+    type: text
+  list_employee:
+    type: text
+  list_event:
+    type: text
+  list_nhan_vien_du_an:
+    type: text
+  list_nhan_vien_event:
+    type: text
+  list_product:
+    type: text
+  list_project:
+    type: text
+  list_room:
+    type: text
+  loaisp:
+    type: text
+  nguoi_to_chuc_event:
+    type: text
+  ten_du_an:
+    type: text
+  ten_event:
+    type: text
+  ten_phong_ban:
+    type: text
+  ten_san_pham:
+    type: text
+  tensp:
+    type: text
+  thoi gian du an:
+    type: text
+  thoi_gian_event:
+    type: text
+  time:
+    type: text
+  truong_phong:
+    type: text
+responses:
+  utter_che_bai:
+  - text: Rất xin lỗi bạn :(
+  utter_ask_quy_dinh:
+  - text: "Đây là những nội dung trong quy định công ty: \n1. Nội quy lao động \n\
+      2. Trật tự trong công ty \n3. An toàn lao động và vệ sinh nơi làm việc \n4.\
+      \ Quy định về giao tiếp, ứng xử nội bộ \n5. Quy định về trang phục làm việc\
+      \ trong công ty \n6. Nội quy về sử dụng tài sản trong công ty \n Bạn muốn biết\
+      \ về nội dung nào?"
+  utter_ask_quy_dinh_noi_quy_lao_dong:
+  - text: "Đây là những nội dung trong nội quy lao động: \n1. Quy định thời gian làm\
+      \ việc \n2. Quy định về nghỉ phép \n Bạn muốn biết về nội dung nào?"
+  utter_ask_quy_dinh_trat_tu_cong_ty:
+  - text: "Đây là những nội dung trong trật tự công ty: \n1. Thủ tục ra vào công ty\
+      \ \n2. Quy định về tiếp khách trong công ty \n Bạn muốn biết về nội dung nào?"
+  utter_ask_quy_dinh_an_toan_ve_sinh_lao_dong:
+  - text: "Đây là những nội dung trong an toàn lao động và vệ sinh nơi làm viêc: \n\
+      1. An toàn lao động \n2. Vệ sinh nơi làm việc \n Bạn muốn biết về nội dung nào?"
+  utter_ask_quy_dinh_giao_tiep_ung_xu:
+  - text: "Chào hỏi nhau mỗi khi tới công ty. Thể hiện thái độ hòa nhã, vui vẻ và\
+      \ tôn trọng lẫn nhau. Trong mối quan hệ, xây dựng sự thoải mái, thân mật và\
+      \ sẵn sàng giúp đỡ, học tập lẫn nhau để cùng nhau tiến bộ. \nNghiêm cấm tình\
+      \ trạng cạnh tranh không lành mạnh, tìm cách chơi xấu nhau. Không được có hành\
+      \ động và cử chỉ mang tính xác phậm tới danh dự và nhân phẩm đồng nghiệp, nếu\
+      \ như không hài lòng về một ai đó thì bạn cần phải giải quyết một cách trực\
+      \ tiếp thẳng thắn bằng cách phản ánh trực tiếp với  họ và với những người có\
+      \ thẩm quyền tại công ty. "
+  utter_ask_quy_dinh_trang_phuc_lam_viec:
+  - text: "Với nam: phải mặc áo sơ mi, quần âu, đi giày, đảm bảo gọn gàng, sạch sẽ.\
+      \ \nVới nữ: tiêu chuẩn ăn mặc kín đáo, gọn gàng, phong cách trang điểm vừa phải.\
+      \ \nĐối với những người nhân viên làm việc mảng kỹ thuật thì cần phải mặc đồng\
+      \ phục kỹ thuật, mang giày theo quy định để đảm bảo an toàn lao động."
+  utter_ask_quy_dinh_su_dung_tai_san:
+  - text: "Tuyệt đối không sử dụng điện thoại của công ty để phục vụ cho việc riêng\
+      \ vì không những gây ra lãng phí tiền bạc của công ty cho các cuộc gọi cá nhân\
+      \ mà còn làm gián đoán những cuộc gọi đến của khách hàng. Nếu như vị phạm sẽ\
+      \ bị phạt theo quy định của công ty. \nCó ý thức giữ gìn và bảo vệ tài sản của\
+      \ công ty, những tài sản bạn được giao cho sử dụng. Không sử dụng tài sản của\
+      \ công ty cho những mục đích của cá nhân hay là mục đích thu lợi cho bản thân\
+      \ và những người khác. Không sử dụng tên, thương hiệu và uy tín của công ty\
+      \ nhằm vào mục đích tư lợi cho cá nhân."
+  utter_ask_quy_dinh_thoi_gian_lam_viec:
+  - text: "Quy định về số giờ làm việc trong ngày: 8 tiếng \nSố ngày làm việc trong\
+      \ mỗi tuần: thứ 2 đến trưa thứ 7. \nQuy định về thời điểm bắt đầu ngày làm việc:\
+      \ 8 giờ sáng. \nThời gian nghỉ trưa: từ 12 giờ trưa đến 1h chiều \nNhân viên\
+      \ làm tăng ca, thêm giờ sẽ được tính lương bằng 150% so với mức lương thông\
+      \ thường trong thời gian làm việc được quy định"
+  utter_ask_quy_dinh_nghi_phep:
+  - text: Người lao động nào cũng sẽ được hưởng chế độ nghỉ 12 ngày phép hưởng nguyên
+      lương. Có nghĩa là mỗi tháng người lao động sẽ được nghỉ 1 ngày phép có lương,
+      nếu người lao động không nghỉ thì có thể cộng dồn ngày phép lại và nghỉ khi
+      cần. Sau 5 năm làm việc thì người lao động sẽ được hưởng thêm một ngày phép
+      có lương.
+  utter_ask_quy_dinh_thu_tuc_ra_vao:
+  - text: "Trong giờ làm việc, người lao động phải có mặt tại nơi làm việc theo đúng\
+      \ thời gian quy định, không làm bất cứ việc riêng nào ngoài việc làm được giao.\
+      \ \nKhông vắng mặt tại Công ty nếu như không đưa ra lý do chính đáng trước đó.\
+      \ Nếu muốn nghỉ thì hãy báo cho cấp trên biết nếu ra ngoài. Không tự do ra vào\
+      \ công ty ngoài giờ làm việc. \nKhông gây mất trật tự trong giờ làm việc."
+  utter_ask_quy_dinh_tiep_khach:
+  - text: "Không sử dụng hình thức văn bản để giao tiếp, hoặc nói chuyện trong công\
+      \ ty, tránh giao tiếp bằng những nội dung khiêu khích nhau với người ngoài công\
+      \ ty. \nNgười lao động không sử dụng máy tính của công ty để làm việc không\
+      \ chính đáng như quấy rối người khác, tuyên truyền những văn bản, hình ảnh mang\
+      \ tính chất kỳ thị tôn giáo, sắc tộc."
+  utter_ask_quy_dinh_an_toan_lao_dong:
+  - text: Toàn bộ cán bộ công nhân viên cần phải nghiêm túc tuân thủ những quy định
+      và tiêu chuẩn về việc làm an toàn lao động. Người lao động có quyền rời bỏ hay
+      từ chối làm việc khi thấy những nguy cơ về an toàn lao động không được đảm bảo,
+      có thể đe dọa đến tính mạng hoặc sức khỏe của bản thân và những người khác.
+  utter_ask_quy_dinh_ve_sinh:
+  - text: "Trước khi rời khỏi chỗ làm thì người lao động cần phải chủ động làm vệ\
+      \ sinh sạch sẽ chính nơi làm việc của mình, thực hiện việc kiểm tra thiết bị\
+      \ điện nước ngay tại chỗ. Đảm bảo các thiết bị đã được đóng, tắt và khóa thật\
+      \ cẩn thận rồi. \nNgười lao động cần phải chịu trách nhiệm đối với việc bảo\
+      \ dưỡng và vệ sinh những thiết bị ngay tại chỗ làm việc của mình. Đồng thời\
+      \ có ý thức giữ gìn thiết bị điện được sạch sẽ."
+  utter_chao_hoi:
+  - text: Xin chào. Tôi là Office Chatbot. Tôi có thể giúp gì cho bạn?
+  utter_tam_biet:
+  - text: Tạm biệt bạn. Chúc bạn một ngày làm việc vui vẻ.
+  utter_chuc_nang:
+  - text: Nhiệm vụ chính của tôi là giải đáp những thắc mắc của bạn về các thông tin
+      quy định, nội quy trong công ty; các phòng ban, các dự án và các sự kiện trong
+      công ty
+  utter_cam_on:
+  - text: Không có gì. Đây là nhiệm vụ của tôi
+  utter_ask_dia_chi:
+  - text: 'Địa chỉ công ty: Số 1, Phạm Văn Bạch, Yên Hòa, Cầu Giấy'
+  utter_ask_vi_tri_canteen:
+  - text: 'Vị trí canteen: Tầng 17'
+  utter_ask_thoi_gian_an:
+  - text: 'Thời gian nghỉ trưa: từ 12 giờ trưa đến 1h chiều'
+  utter_ask_vi_tri_do_xe:
+  - text: Bãi đỗ xe ở số 12 đường Phạm Văn Bạch
+  utter_ask_gio_gui_xe:
+  - text: Giờ gửi xe tử 6h sáng tới 19h chiều
+  utter_ask_thoi_gian:
+  - text: Bây giờ là {time}
+  utter_ask_ngay:
+  - text: Hôm nay là {date}
+  utter_ask_danh_sach_phong_ban:
+  - text: 'Danh sách phòng ban: {list_room}'
+  utter_ask_truong_phong:
+  - text: Phòng {ten_phong_ban} có trưởng phòng là {truong_phong}
+  utter_ask_vi_tri_phong_ban:
+  - text: Phòng {ten_phong_ban} ở {dia_diem_phong_ban}
+  utter_ask_danh_sach_nhan_vien_thuoc_phong_ban:
+  - text: Phòng {ten_phong_ban} có :{list_employee}
+  utter_ask_event:
+  - text: 'Danh sách sự kiên: {list_event}'
+  utter_ask_nhan_vien_event:
+  - text: 'Danh sách nhân viên tham gia sự kiện {ten_event}: {list_nhan_vien_event}'
+  utter_ask_thong_tin_event:
+  - text: Sự kiện {ten_event} được tổ chức ở {dia_diem_event} vào lúc {thoi_gian_event}
+  utter_ask_dia_diem_event:
+  - text: Sự kiện {ten_event} được tổ chức ở {dia_diem_event}
+  utter_ask_thoi_gian_event:
+  - text: Sự kiện {ten_event} được tổ chức vào lúc {thoi_gian_event}
+  utter_ask_danh_sach_du_an:
+  - text: 'Danh sách dự án: {list_project}'
+  utter_ask_thoi_gian_thuc_hien_du_an:
+  - text: Dự án {ten_du_an} được tổ chức vào lúc {thoi gian du an}
+  utter_ask_dia_diem_thuc_hien_du_an:
+  - text: Dự án {ten_du_an} được tổ chức ở {dia_diem}
+  utter_ask_nhan_vien_du_an:
+  - text: 'Danh sách nhân viên tham gia dự án {ten_du_an} : {list_nhan_vien_du_an}'
+  utter_default:
+  - text: Xin lỗi tôi không hiểu, bạn có thể nói lại không?
+actions:
+- action_ask_thoi_gian
+- action_ask_ngay
+- action_ask_danh_sach_phong_ban
+- action_ask_truong_phong
+- action_ask_vi_tri_phong_ban
+- action_ask_danh_sach_nhan_vien_thuoc_phong_ban
+- action_ask_event
+- action_ask_nhan_vien_event
+- action_ask_thong_tin_event
+- action_ask_dia_diem_event
+- action_ask_thoi_gian_event
+- action_ask_danh_sach_du_an
+- action_ask_thoi_gian_thuc_hien_du_an
+- action_ask_dia_diem_thuc_hien_du_an
+- action_ask_nhan_vien_du_an
+- utter_che_bai
+- utter_ask_quy_dinh
+- utter_ask_quy_dinh_trat_tu_cong_ty
+- utter_ask_quy_dinh_noi_quy_lao_dong
+- utter_ask_quy_dinh_an_toan_ve_sinh_lao_dong
+- utter_ask_quy_dinh_giao_tiep_ung_xu
+- utter_ask_quy_dinh_trang_phuc_lam_viec
+- utter_ask_quy_dinh_su_dung_tai_san
+- utter_ask_quy_dinh_thoi_gian_lam_viec
+- utter_ask_quy_dinh_nghi_phep
+- utter_ask_quy_dinh_thu_tuc_ra_vao
+- utter_ask_quy_dinh_tiep_khach
+- utter_ask_quy_dinh_an_toan_lao_dong
+- utter_ask_quy_dinh_ve_sinh
+- utter_chao_hoi
+- utter_tam_biet
+- utter_chuc_nang
+- utter_cam_on
+- utter_ask_dia_chi
+- utter_ask_vi_tri_canteen
+- utter_ask_thoi_gian_an
+- utter_ask_vi_tri_do_xe
+- utter_ask_gio_gui_xe
+- utter_ask_thoi_gian
+- utter_ask_ngay
+- utter_ask_danh_sach_phong_ban
+- utter_ask_truong_phong
+- utter_ask_vi_tri_phong_ban
+- utter_ask_danh_sach_nhan_vien_thuoc_phong_ban
+- utter_ask_event
+- utter_ask_nhan_vien_event
+- utter_ask_thong_tin_event
+- utter_ask_dia_diem_event
+- utter_ask_thoi_gian_event
+- utter_ask_danh_sach_du_an
+- utter_ask_thoi_gian_thuc_hien_du_an
+- utter_ask_dia_diem_thuc_hien_du_an
+- utter_ask_nhan_vien_du_an
+- utter_default

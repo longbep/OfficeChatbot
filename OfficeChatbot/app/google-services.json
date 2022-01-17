@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1092127332245",
+    "firebase_url": "https://office-chatbot-477e1.firebaseio.com",
+    "project_id": "office-chatbot-477e1",
+    "storage_bucket": "office-chatbot-477e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092127332245:android:10ce23f48325ee7fd5889c",
+        "android_client_info": {
+          "package_name": "com.example.officechatbot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1092127332245-ghmrve9ios41rbh8cid5mpsh7k673hio.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHjlP7dX5_IqPLfx5XeCP4STMuIeTwTJQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1092127332245-ghmrve9ios41rbh8cid5mpsh7k673hio.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

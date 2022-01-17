@@ -1,0 +1,218 @@
+2020-05-02 12:59:34,715 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-05-02 12:59:48,926 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-05-02 13:14:08,631 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "c:\program files\python36\lib\site-packages\sanic\app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "c:\program files\python36\lib\site-packages\sanic\router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "c:\program files\python36\lib\site-packages\sanic\router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2020-05-02 13:15:08,551 [ERROR]  Exception occurred while handling uri: unknown
+NoneType: None
+2020-05-02 13:15:08,801 [ERROR]  Exception occurred while handling uri: unknown
+NoneType: None
+2020-05-02 13:35:49,514 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-05-02 13:43:59,519 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-05-02 13:44:25,342 [ERROR]  An exception was raised while fetching a model. Continuing anyways...
+Traceback (most recent call last):
+  File "c:\program files\python36\lib\site-packages\rasa\utils\io.py", line 219, in unarchive
+    tar = tarfile.open(fileobj=IOReader(byte_array))
+  File "c:\program files\python36\lib\tarfile.py", line 1574, in open
+    raise ReadError("file could not be opened successfully")
+tarfile.ReadError: file could not be opened successfully
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\program files\python36\lib\site-packages\rasa\core\agent.py", line 203, in _run_model_pulling_worker
+    await _update_model_from_server(model_server, agent)
+  File "c:\program files\python36\lib\site-packages\rasa\core\agent.py", line 121, in _update_model_from_server
+    model_server, agent.fingerprint
+  File "c:\program files\python36\lib\site-packages\rasa\core\agent.py", line 179, in _pull_model_and_fingerprint
+    rasa.utils.io.unarchive(await resp.read(), model_directory)
+  File "c:\program files\python36\lib\site-packages\rasa\utils\io.py", line 224, in unarchive
+    zip_ref = zipfile.ZipFile(IOReader(byte_array))
+  File "c:\program files\python36\lib\zipfile.py", line 1108, in __init__
+    self._RealGetContents()
+  File "c:\program files\python36\lib\zipfile.py", line 1175, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2020-05-02 13:44:35,335 [ERROR]  An exception was raised while fetching a model. Continuing anyways...
+Traceback (most recent call last):
+  File "c:\program files\python36\lib\site-packages\rasa\utils\io.py", line 219, in unarchive
+    tar = tarfile.open(fileobj=IOReader(byte_array))
+  File "c:\program files\python36\lib\tarfile.py", line 1574, in open
+    raise ReadError("file could not be opened successfully")
+tarfile.ReadError: file could not be opened successfully
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\program files\python36\lib\site-packages\rasa\core\agent.py", line 203, in _run_model_pulling_worker
+    await _update_model_from_server(model_server, agent)
+  File "c:\program files\python36\lib\site-packages\rasa\core\agent.py", line 121, in _update_model_from_server
+    model_server, agent.fingerprint
+  File "c:\program files\python36\lib\site-packages\rasa\core\agent.py", line 179, in _pull_model_and_fingerprint
+    rasa.utils.io.unarchive(await resp.read(), model_directory)
+  File "c:\program files\python36\lib\site-packages\rasa\utils\io.py", line 224, in unarchive
+    zip_ref = zipfile.ZipFile(IOReader(byte_array))
+  File "c:\program files\python36\lib\zipfile.py", line 1108, in __init__
+    self._RealGetContents()
+  File "c:\program files\python36\lib\zipfile.py", line 1175, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2020-05-02 13:44:45,332 [ERROR]  An exception was raised while fetching a model. Continuing anyways...
+Traceback (most recent call last):
+  File "c:\program files\python36\lib\site-packages\rasa\utils\io.py", line 219, in unarchive
+    tar = tarfile.open(fileobj=IOReader(byte_array))
+  File "c:\program files\python36\lib\tarfile.py", line 1574, in open
+    raise ReadError("file could not be opened successfully")
+tarfile.ReadError: file could not be opened successfully
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\program files\python36\lib\site-packages\rasa\core\agent.py", line 203, in _run_model_pulling_worker
+    await _update_model_from_server(model_server, agent)
+  File "c:\program files\python36\lib\site-packages\rasa\core\agent.py", line 121, in _update_model_from_server
+    model_server, agent.fingerprint
+  File "c:\program files\python36\lib\site-packages\rasa\core\agent.py", line 179, in _pull_model_and_fingerprint
+    rasa.utils.io.unarchive(await resp.read(), model_directory)
+  File "c:\program files\python36\lib\site-packages\rasa\utils\io.py", line 224, in unarchive
+    zip_ref = zipfile.ZipFile(IOReader(byte_array))
+  File "c:\program files\python36\lib\zipfile.py", line 1108, in __init__
+    self._RealGetContents()
+  File "c:\program files\python36\lib\zipfile.py", line 1175, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2020-05-02 13:44:55,340 [ERROR]  An exception was raised while fetching a model. Continuing anyways...
+Traceback (most recent call last):
+  File "c:\program files\python36\lib\site-packages\rasa\utils\io.py", line 219, in unarchive
+    tar = tarfile.open(fileobj=IOReader(byte_array))
+  File "c:\program files\python36\lib\tarfile.py", line 1574, in open
+    raise ReadError("file could not be opened successfully")
+tarfile.ReadError: file could not be opened successfully
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\program files\python36\lib\site-packages\rasa\core\agent.py", line 203, in _run_model_pulling_worker
+    await _update_model_from_server(model_server, agent)
+  File "c:\program files\python36\lib\site-packages\rasa\core\agent.py", line 121, in _update_model_from_server
+    model_server, agent.fingerprint
+  File "c:\program files\python36\lib\site-packages\rasa\core\agent.py", line 179, in _pull_model_and_fingerprint
+    rasa.utils.io.unarchive(await resp.read(), model_directory)
+  File "c:\program files\python36\lib\site-packages\rasa\utils\io.py", line 224, in unarchive
+    zip_ref = zipfile.ZipFile(IOReader(byte_array))
+  File "c:\program files\python36\lib\zipfile.py", line 1108, in __init__
+    self._RealGetContents()
+  File "c:\program files\python36\lib\zipfile.py", line 1175, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2020-05-02 13:45:05,331 [ERROR]  An exception was raised while fetching a model. Continuing anyways...
+Traceback (most recent call last):
+  File "c:\program files\python36\lib\site-packages\rasa\utils\io.py", line 219, in unarchive
+    tar = tarfile.open(fileobj=IOReader(byte_array))
+  File "c:\program files\python36\lib\tarfile.py", line 1574, in open
+    raise ReadError("file could not be opened successfully")
+tarfile.ReadError: file could not be opened successfully
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\program files\python36\lib\site-packages\rasa\core\agent.py", line 203, in _run_model_pulling_worker
+    await _update_model_from_server(model_server, agent)
+  File "c:\program files\python36\lib\site-packages\rasa\core\agent.py", line 121, in _update_model_from_server
+    model_server, agent.fingerprint
+  File "c:\program files\python36\lib\site-packages\rasa\core\agent.py", line 179, in _pull_model_and_fingerprint
+    rasa.utils.io.unarchive(await resp.read(), model_directory)
+  File "c:\program files\python36\lib\site-packages\rasa\utils\io.py", line 224, in unarchive
+    zip_ref = zipfile.ZipFile(IOReader(byte_array))
+  File "c:\program files\python36\lib\zipfile.py", line 1108, in __init__
+    self._RealGetContents()
+  File "c:\program files\python36\lib\zipfile.py", line 1175, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2020-05-02 13:45:15,340 [ERROR]  An exception was raised while fetching a model. Continuing anyways...
+Traceback (most recent call last):
+  File "c:\program files\python36\lib\site-packages\rasa\utils\io.py", line 219, in unarchive
+    tar = tarfile.open(fileobj=IOReader(byte_array))
+  File "c:\program files\python36\lib\tarfile.py", line 1574, in open
+    raise ReadError("file could not be opened successfully")
+tarfile.ReadError: file could not be opened successfully
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\program files\python36\lib\site-packages\rasa\core\agent.py", line 203, in _run_model_pulling_worker
+    await _update_model_from_server(model_server, agent)
+  File "c:\program files\python36\lib\site-packages\rasa\core\agent.py", line 121, in _update_model_from_server
+    model_server, agent.fingerprint
+  File "c:\program files\python36\lib\site-packages\rasa\core\agent.py", line 179, in _pull_model_and_fingerprint
+    rasa.utils.io.unarchive(await resp.read(), model_directory)
+  File "c:\program files\python36\lib\site-packages\rasa\utils\io.py", line 224, in unarchive
+    zip_ref = zipfile.ZipFile(IOReader(byte_array))
+  File "c:\program files\python36\lib\zipfile.py", line 1108, in __init__
+    self._RealGetContents()
+  File "c:\program files\python36\lib\zipfile.py", line 1175, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2020-05-02 13:45:46,788 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-05-02 13:45:58,632 [ERROR]  Could not load model due to File is not a zip file.
+2020-05-02 13:45:58,635 [ERROR]  Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "c:\program files\python36\lib\site-packages\rasa\utils\io.py", line 219, in unarchive
+    tar = tarfile.open(fileobj=IOReader(byte_array))
+  File "c:\program files\python36\lib\tarfile.py", line 1574, in open
+    raise ReadError("file could not be opened successfully")
+tarfile.ReadError: file could not be opened successfully
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\program files\python36\lib\site-packages\sanic\app.py", line 1167, in run
+    serve(**server_settings)
+  File "c:\program files\python36\lib\site-packages\sanic\server.py", line 892, in serve
+    trigger_events(before_start, loop)
+  File "c:\program files\python36\lib\site-packages\sanic\server.py", line 668, in trigger_events
+    loop.run_until_complete(result)
+  File "c:\program files\python36\lib\asyncio\base_events.py", line 468, in run_until_complete
+    return future.result()
+  File "c:\program files\python36\lib\site-packages\rasa\core\run.py", line 258, in load_agent_on_start
+    action_endpoint=endpoints.action,
+  File "c:\program files\python36\lib\site-packages\rasa\core\agent.py", line 247, in load_agent
+    model_server,
+  File "c:\program files\python36\lib\site-packages\rasa\core\agent.py", line 63, in load_from_server
+    await _update_model_from_server(model_server, agent)
+  File "c:\program files\python36\lib\site-packages\rasa\core\agent.py", line 121, in _update_model_from_server
+    model_server, agent.fingerprint
+  File "c:\program files\python36\lib\site-packages\rasa\core\agent.py", line 179, in _pull_model_and_fingerprint
+    rasa.utils.io.unarchive(await resp.read(), model_directory)
+  File "c:\program files\python36\lib\site-packages\rasa\utils\io.py", line 224, in unarchive
+    zip_ref = zipfile.ZipFile(IOReader(byte_array))
+  File "c:\program files\python36\lib\zipfile.py", line 1108, in __init__
+    self._RealGetContents()
+  File "c:\program files\python36\lib\zipfile.py", line 1175, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2020-05-03 00:35:28,700 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-05-03 00:42:38,205 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-05-03 00:44:05,596 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-05-03 00:48:49,204 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-05-03 01:01:03,114 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-05-03 01:06:09,166 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-05-03 01:11:13,536 [ERROR]  Exception occurred while handling uri: 'ws://f56cf0b6.ngrok.io/socket.io/?EIO=3&sid=a8a02d3ff75c43edbb934510b3d57494&transport=websocket'
+Traceback (most recent call last):
+  File "c:\program files\python36\lib\site-packages\sanic\app.py", line 976, in handle_request
+    response = await response
+  File "c:\program files\python36\lib\site-packages\engineio\asyncio_server.py", line 248, in handle_request
+    socket = self._get_socket(sid)
+  File "c:\program files\python36\lib\site-packages\engineio\server.py", line 561, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+2020-05-03 01:20:55,119 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-05-03 01:27:36,655 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-05-03 01:29:10,877 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-05-03 01:29:47,132 [INFO ]  Starting Rasa server on http://localhost:5005
